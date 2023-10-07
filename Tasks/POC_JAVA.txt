@@ -1,0 +1,65 @@
+All need to start working with below POC:
+POC 1 : 3-4 Days
+
+Start working on below POC1/Task1: 
+
+Learn & Develop Small Application, 
+Create Spring Boot Application with Rest API, 
+1- register new user with so many field along with validation -------done
+2- Edit User base on user id ----------------------------------------done
+3. Search User by Name or Surname or Pincode ------------------------done
+4. Sort User by DOB & Joining Date ----------------------------------done
+5. Soft & Hard Delete User, -----------------------------------------done
+6- Write Unit test case for All API and cover all Possibility (Code Coverage) 
+
+Skills:
+Spring Boot Rest API
+Hibernate / JPA
+SQL / NoSQL
+Lombok
+Java 8 
+Coding Standards
+
+Hard delete means actual delete from database through url and 
+Soft means just a flag as deleted 1 in front for that record through url.
+It will not actually delete but flagged as deleted 1.
+
+
+References:
+https://dzone.com/articles/spring-boot-restful-web-service-complete-example
+https://www.javatpoint.com/restful-web-services-spring-boot
+https://www.vogella.com/tutorials/JUnit/article.html
+https://howtodoinjava.com/junit-4/
+https://www.geeksforgeeks.org/introduction-to-project-lombok-in-java-and-how-to-get-started/
+https://beginnersbook.com/2017/10/java-8-stream-tutorial/
+https://www.blazemeter.com/blog/spring-boot-rest-api-unit-testing-with-junit
+https://dzone.com/articles/spring-boot-rest-api-unit-testing-with-junit
+https://www.springboottutorial.com/unit-testing-for-spring-boot-rest-services
+https://dev.to/saiupadhyayula/junit-5-tutorial-for-beginners-o8a
+
+Above POC is for 4 days
+
+After completion your project code has to be shared through GitHub Link only
+
+
+{
+    "id":1,
+    "firstname":"vasu",
+    "surname":"kumar",
+    "phoneNo":"8787666788",
+    "dob":"1999-05-03",
+    "joiningdate":"2021-06-19",
+    "age":23,
+    "userName":"vasuraam",
+    "Address":"Tumakur",
+    "pincode":"572127",
+    "active":0
+
+
+}
+
+
+
+
+
+

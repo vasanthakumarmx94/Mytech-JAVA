@@ -1,0 +1,31 @@
+.myprofile{
+    padding-top: 100px;
+    background-image: url(https://media.istockphoto.com/illustrations/user-profile-icon-glassy-modern-blue-button-abstract-background-illustration-id1200200944?k=20&m=1200200944&s=170667a&w=0&h=cUV-DqDkwbKrLdEGimsI9LPkfkcuob28kkRF-sdFYMU=);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+.container{
+    margin-left: 700px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+
+button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+  .card-header{
+      text-align: center;
+  }
+  .card-body{
+      display: flex;
+     border-radius: 10px;
+  }
+  .mydetails{
+      text-align: center;
+  }

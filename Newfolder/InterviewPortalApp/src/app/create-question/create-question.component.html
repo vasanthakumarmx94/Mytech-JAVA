@@ -1,0 +1,58 @@
+<section class="addquestion">
+    <div class="container col-md-10">
+        <div class="col-md-7 offset-md-3">
+            <h1>CEATE QUESTION</h1>
+            <form (ngSubmit)="onSubmit()">
+                
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <select [(ngModel)]='company' class='form-control'   name="company" id="company">
+                        <option [ngValue]="null" selected disabled>Select Company</option>
+                        <option *ngFor="let company of companies" [ngValue]="company">{{company.companyName}}</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="experienceLevel">Experience Level:</label>
+                    <select  [(ngModel)]='experience' class='form-control'  name="experienceLevel" id="experienceLevel">
+                        <option [ngValue]="null" selected disabled>Select Experience</option>
+                        <option *ngFor="let experience of experiences" [ngValue]="experience">{{experience.experienceLevel}}</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Select Question Type</label>
+                    <select [(ngModel)]='question.questionType' name="questionType" id="questionType"
+                        class='form-control'>
+                        <option value="Descriptive">Explain</option>
+                        <option value="Discuss">Discuss</option>
+                        <option value="Defination">Defination</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Question Text</label>
+                    <input type="text" class="form-control" id="questionText" [(ngModel)]='question.questionText'
+                        name="questionText" placeholder="Enter Question">
+                </div>
+                <div class="form-group">
+                    <label>Answer Text</label>
+                    <input type="text" class="form-control" id="answerText" [(ngModel)]='question.answerText'
+                        name="answerText" placeholder="Enter Answer">
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <input type="text" class="form-control" id="description" [(ngModel)]='question.description'
+                        name="description" placeholder="Enter Description">
+                </div>
+
+                <br>
+                <div class="form-group">
+                    <button class="btn btn-info" type="submit">Submit</button>&nbsp;&nbsp;
+                    <button class="btn btn-info" type="reset">Reset</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</section>

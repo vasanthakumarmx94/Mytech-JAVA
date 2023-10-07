@@ -1,0 +1,464 @@
+1. Basic based on loops and arrays: 
+Project --> Core Java --> src/--> com.neosoft.basics
+--> Program1 --> ask user to enter an int value and check whether its a palindrome
+--> Program2 --> ask user to enter a value for no. of rows (ex. 4) and 
+display following
+				
+		1
+ 	      2  3 
+	     4  5  6 
+	    7   8  9 10 		
+
+--> Program3
+Ask user to enter 5 elements in an array. Swap max element to min element and vice 
+versa and Display this modified array.
+
+2.Class, Object and Constructor
+Create a class as Student Attributes --> stid, name,course,marks
+param constructor to assign values Student(stid, name,course,marks)
+method as show() --> Display all details
+
+Ask user to enter 5 students details and hold these objects in an array.
+Display students having more than 60 marks from BCA course.
+
+3. 
+Has-A Relation:
+Create a class as Employee (Attributes --> eid, ename,esal,project)
+Create a class as Project (Attributes --> pid, pname,plocation)
+Crate two employees and assign them a Project as "Mobile App for Project management"
+create two more employees and assign them a Project as "E-Commerce Web App"
+
+Out of these 4 display employees having salary > 25000 and working for Web application.
+
+4. Inheritance and Polymorphism:
+Write a program to create a class named shape. In this class we have three
+sub classes Circle, Triangle and Square each class has two member function
+named area () and draw (). Create these using polymorphism concepts.
+
+area() --> Calculate the area of shape
+draw () --> Drawing a shape [name] with coordinates [] 
+
+5.  Exception handling:
+
+Create an Account Class with attribute private acc_balance = 0 and 
+withdraw(int amount) method for withdrawal of amount and 
+showBalance() to show balance.
+
+Create own exception class as WithdrawException and its object should be thrown if 
+asked withdrawal amount is greater than balance amount else show withdraw amount success.
+
+psv main(){
+
+    	Account ac = new Account(25000);//initial balance set
+	ac.withdraw(30000); 		//handle exception --> Insufficient balance
+    	ac.withdraw(20000); 		//fine
+    	ac.showBalance();		//Balance: 5000
+	ac.withdraw(10000); 		//handle exception --> Insufficient balance
+	ac.showBalance();		//Balance: 5000
+}
+
+6.  Multi threading
+Create a class for Thread1 to execute "Java is nice" in reverse order with pause of 2 seconds. --> ecin si avaJ
+Create a class Thread2 to execute "Java is nice" with alternate characters with pause of 1 second.
+--> J v  i  i e
+
+join -->  join() method which allows one thread to wait until another thread completes its execution.
+t1.start(); //t1 is executing
+t1.join();
+t2.start();
+t2.join();
+
+7. Thread Synchronization:
+SharedResource s = new SharedResource();
+
+MyThread t1 = new MyThread(2,5);
+MyThread t2 = new MyThread(3,7);
+
+s.doPrint(i,j)  2,5 => 2 3 4 5 6 7  (5 digits are added in seq after 2)
+                3,7 => 3 4 5 6 7 8 9 10 (7 digits are added in seq after 3)
+						  
+                      Print with 1 second pause
+Make that doPrint method as synchronized method.
+
+8. List:
+Create 5 objects of Trainer (tr_id,name,course,salary) with different values.
+Using Collection, filter out the trainers having salary > 20000 and course is Java.
+Put these filtered trainers into another collection for further reference. 
+Remove it from the original collection.
+Display these filtered trainers collection objects using an iterator.
+
+9. Implement Doubly Linked List in Java. (In java there is no pointer like C/CPP)
+Doubly Linked List contains a link element called first and last.
+Each link carries a data field(s) and two link fields called next and prev. 
+It is a linked data structure that consists of a set of sequentially linked records called nodes. 
+Each node contains three fields: two link fields and one data field.
+
+10. Write a program to implement the HashSet, LinkedHashSet and TreeSet differences.
+
+-----------------
+
+11. Map Interface
+Create a Map collection of 10 employees (eid,ename,esal). Consider empid as key and empObj as a value for the key. 
+	11.1 First Display these collection in sorted order. 
+	11.2 Remove employees having salary < 15000 from this collection.
+	11.3 Add remaining employees into new map collection.
+	11.4 Fetch all these new employees on console the way it inserted in 11.3 step 
+
+12. Comparator
+Create a collection for 5 Movies (private members ratings,name,year)
+Using switch statements create a menu driven program
+
+Enter your choice:
+1. Sort by ratings
+2. Sort by name
+3. Sort by year
+4. Sort by ratings in Reverse
+5. Sort by name in Reverse
+6. Sort by year in Reverse
+7. EXIT
+
+13. Enum
+Create an Enum for subject like JAVA, CPP, C, PYTHON
+Create a student class (stid,stname,subject,marks). Create 5 objects of it.
+Ask user to enter a subject name to display the respective students.
+
+14. Write a code to read file if exists and write lines in to another file if it includes "java" in it.
+Display no. of lines(counter) and no. of worlds written in to this new file.
+(Use Buffered classes)
+
+15.Accept the email id's from user and store these in to a file named as emails.txt.
+Copy domain only from this emails.txt and write into another file named as domains.txt.
+Pass these file names from command line only.
+Ex: abcd@gmail.com ---> gmail.com has to be written in domains.txt
+abcd@yahoo.com ---> yahoo.com has to be written in domains.txt
+
+16. Serialization and Deserialization 
+Create 5 objects of emp(eid,ename,esal,dno) and store them into a file called emp.db
+Read them back and display employees from dept 10.
+Display employees having max salary from this file.
+
+17. Object cloning:  
+Create 5 clones of a Pulsor bike. Store all these objects in to a file.
+Read them back on console.
+
+18. Write a Java program which would randomly generate a Housie Ticket. 
+Here are the rules of generating the ticket:
+a. There are 3 rows and 9 columns in the ticket. Columns from 1.. 9 has values from 1 to 90. 
+In the first column the values of the number are from 1..10, second column 11..20 and so on.
+b. Each column has max 2 cells filled in.
+c. The numbers cannot be repeated in a column.
+d. Each row has max 5 cells filled in, hence only 15 cells in all.
+Each matrix represents one single ticket..
+
+19. Create class as Student(stid,stname,mobile,email) and ask user to enter 5 students details.
+Validate mobile and email before insert. (Regex and Java 8 Stream, Collectors)
+Display students details whose mobile no. starts with 98.
+Display students details whose email id is from gmail.
+Count students whose email id is not from gmail.
+
+20. Bank system console based applicatin (PDF Shared)
+1. Perform without java 8 features (Version 1)
+2. Perform with java 8 features and File storage Serialization and Deserialization (Version 2)
+
+----------------------------------------------------------
+
+21. Crate a js file called calci.js. 
+Includes methods add(),sub(),div(),multi() where we need to pass 2 numbers.
+Ask user to enter 2 numbers and perform all calculation and display results.
+(Using nashorn)
+
+22. Java Annotations:
+Implement xml Custom annotation for a car class. 
+<car><manufacturer> Ford </manufacturer><model> F150 </model><year> 2018 </year></car>
+
+----------------------------------------------------------
+
+23. Fetching (select queries only):
+Use database mydb and emp table from it:
+
+Decrement sal by 5% who is a clerk?
+Display eno and ename who have sal between 2000 and 3000?
+Display eno and job who are from dept 10 or 20?
+Display eno,mgr who have salary > 2000 or deptno > 10 or job is clerk?
+Increment sal by 15% who is not reporting to any one?
+
+24. Order by
+Increment sal by 7% who is a manager and display records in descending of sal?
+Display eno and ename who have sal between 2000 and 3000. Display the records order by empno in ascending?
+Display unique records of empno and job who are from dept 10 or 20?
+Display unique jobs from emp except manager?
+
+25. Group by
+1. Count total no. of emps?
+2. Count dept wise total emps?
+3. Display min salary of emps?
+4. Display the max salary of each dept?
+5. Count people have salary > 2000?
+6. Count people from each dept have salary < 3000?
+7. Display dept has < 3 people.
+8. Display deptno where dept's max(sal) > 3000?
+
+26. Joins (emp+dept):
+1. Display emp details with 7% increment who belongs to BOSTON location.
+2. Count the no. of employees works for RESEARCH dept.
+3. Find out the max salary received in SALES dept.
+4. Display date of joining of emp whose dept location is not available.
+
+27. DDL+DML
+create table student_info with columns rno,name,city 
+where rno is a primary key and all columns do not accept null.
+
+Insert below records:
+1,'gautam','jalgaon'
+2,'balaji','parbhani'
+3,'rushin','jalgaon'
+
+create table marks with columns rno,sub_code number,marks and insert below records:
+1,100,80
+2,100,null
+1,101,90
+2,101,78
+3,100,30
+3,101,null
+
+create table subject with columns sub_code number,sub_name
+Insert below records:
+100,'dbms'
+101,'SE'
+
+1.Find out average marks of each student along with roll number of student .
+2.Find out how many students have failed i.e. obtained less than 40 marks in DBMS.
+select count(rno) from marks1 where marks< 40 and sub_code=(select sub_code from subject
+where sub_name='dbms')
+3.Find names of Students who are absent in Exam i.e. students having null marks.
+4.Find the name of students who live in either ‘pune’ or 'jalgaon’.
+5.Find out roll no and total marks of each student.
+6.Find those student names which start with 'ba'.
+7.Display total no of students having greater than 75 marks in any one subject.
+8.Display marks of all students for DBMS subject.
+select rno, marks from marks1 where sub_code=(select sub_code from subject where
+sub_name='dbms')
+9.Display no of students appeared for the exam.
+10.Display all subjects marks of students whose name is gautam.
+select marks from marks1 where rno=(select rno from student_info where name='gautam')
+
+28.Date Functions:
+Display the most seniour employees? (Based on days)
+Give 5% increment to employees who are here since last 3 years?
+Give 7% increment to employees who are here since last 5 years and salary < 2000?
+Display yearly report which shows year wise no. of joinings?
+Display monthly report which shows month wise no. of joinings?
+Create a seperate table from existing emp table for emps who have recently joined (i.e. last year).
+
+29. Procedure and Function:
+1. Create a procedure to Display employees experience level with company. (With In as Empid and Out as Level)
+If worked more than 2 and less than 4 years  - Middle
+If worked more than 4 years - Seniour
+else Juniour
+2. Create a function to give incremented salary value if passed Int and Percentage parameter.
+salIncre(2000,10) --> Output 2200   (10% incremented)  
+
+----------------------------------------------------------
+
+30. Bank system console based application with MySQL (JDBC) and MVC Pattern+Property file (PDF already Shared)
+Version 3
+
+----------------------------------------------------------
+
+31. Servlet:
+Create a form for Course Registration with fields 
+Name, Age, EmailId, Mobile, Qualification (1. UG 2. PG (Option button)), 
+Course (java,python,c#,ruby  <-- 1 selection).
+After form submission call your servlet using post method and display above result in Tabular format 
+with message as "Registration successful!!". (Dont use web.xml)
+
+index.html --> for Registration Click here  --> registration.html --> servlet --> display the result
+
+32. Request Dispatcher:
+Create a new application with User as an entity (uid,email,mobile,name,pass). 
+index.html (Login form) --> If new user (not an admin) --->Then ask for registration
+	
+	Message: If not a valid user and ask him for registration
+	[ Uname : admin
+	  UPass : admin 123
+		 Login
+	 Click here for Registration ----> Registration.html ---> Success Msg and show Login Page again
+	]
+
+If login is successfull then show Welcome message and Greeting for user.
+Greeting based on Time: Good Morning, Good Afternoon, Good Evening, Good Night
+
+33. Same with Database
+
+34. Same with Session
+
+35. Bank system web based application with MySQL (JDBC), MVC Pattern+Property file, 
+Session, ReqDispatcher, Filter, WebListener
+Version 4 (Short Presentation By 20th August) (Servlet, HTML,CSS, Bootstrap)
+
+36. Using Servlet to perform CRUD operations
+Create a Login Page for Admin and then if credentials are as UID: admin and pass: admin123 then 
+show Home page where admin can perform below operations:
+
+Home Page will have options like: [VIEW]   [ADD]   [UPDATE]  [DELETE]   LOGOUT
+View --> Admin can see all students or search by id
+Add --> Admim will add student with all details
+Update --> Admin can update student course or marks based on id
+Delete --> Admin can delete student based on ID
+Logout --> Admin can logout and go back to the Login page (session close)
+
+37. Refer ELibary Project and Create a simlar project for Car Rental Web application using Servlet.
+By 25th August 2021
+
+----------------------------------------------------------
+
+JSP:
+38. JSP Elements: Create a html page: LoanCalci.html
+Enter loan amount: 100000
+Enter Period in years: (list of years from 5-20) : 5
+Enter rate of interest: 10
+Reset  Calculate
+
+emicalculate.jsp
+Hi,
+Your monthly EMI will be: 2500
+with method: findEmi()
+
+39. Student Registration form: studentRegistration.html
+Student id:
+Student name:
+Student email:
+Student Mobile:
+Student Gender: ()Male ()Female
+Reset Submit
+
+greeting.jsp
+Hi [Student_name],
+[Greeting Good Morning/Afternoon/Evening/Night] [Sir/Madam] based on time and gender
+
+40. (JSP) Create a Account Class with attribute static acc_balance = 25000 and
+withdraw(int amount) method for withdrawal of amount and showBalance() to return the balance.
+Create own exception class as WithdrawException should be thrown if asked withdrawal amount is 
+greater than balance else withdraw amount success and display the balance.
+
+index.html
+Enter the amount to withdraw: [ ]
+[Withdraw]
+
+exception.jsp to be called on exception to display WithdrawException e.
+
+41. Create a custom tag as Greeting ---> Good Morning/Afternoon/Evening/Night
+<mytag:Greeting/>
+
+presentation on Friday 20th August Q.35+ Weekly Test on Servlet
+presentation on Friday 27th August 2021 Q.37 + Weekly Test on JSP
+
+42. Refer above Q.37 Car Rental Web application and develop using JSP.
+By 3rd September 2021 (Short Presentation By 2nd September)+ Weekly Test on Spring Boot
+----------------------------------------------------------
+
+43. Spring Boot:
+For the user(uid,uname,upass) case. Create CRUD mappings and below:
+http://localhost:8080/user/sortByUname
+http://localhost:8080/user/sortByUpass
+http://localhost:8080/user/{uname}
+
+44. Above case using Spring Data JPA with MySql.
+
+45. Create an application to demonstrate the mapping for Developer and Project (m-1)
+(use validations, lombok, mysql, jpa, devtools dependencies as well)
+
+46. Spring Security (Testing basic, OAuth)
+
+47. Theameleaf
+Write an application for Teachers Management along with existing student management application (CRUD). 
+Teacher (id, first name, last name, mobile, email, city, state, pin code) 
+
+48. Theameleaf with Pagination case and sample project
+
+49. Spring Boot Project Work and Demo (Car Rental REST based Web application)
+
+50. Dynamic filter:
+Create an entity class as Candidate with Cid,name,age,city,state,country,pin attributes.
+Apply a dynamic filters for below end points: 
+/candidate/personal --> Cid,name,age
+/candidate/address --> Cid,city,state,country,pin
+Make sure that you have some data in mysql database.(sample 3-5 records)
+
+51. JWT cases
+
+52. JUnit cases
+----------------------------------------------------------
+53. Microservices Cases
+Create a service for profile-specific properties as /db-props
+
+In the application-production.properties file, we can set up a MySql data source:
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/db
+spring.datasource.username=root
+spring.datasource.password=root
+
+Dev profile in the application-dev.properties file,to use an in-memory H2 database:
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.url=jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+spring.datasource.username=sa
+spring.datasource.password=sa
+ 
+By default its null properties..
+
+Should work with calls -> 8888/db-props/____(Profile)
+And 8080/db-props
+
+Reference: https://dzone.com/articles/spring-boot-profiles-1
+
+54. Refer existing microservice application of Currency and add below services as well: (Use MySQL)
+
+TempExchange End Points: 8765/temp-exchange/dg/to/fh, 8765/temp-exchange/fh/to/dg  
+(You will run 3 instances on different port)
+TempConversion End Points: 8765/temp-conversion/dg/to/fh/value/100, 8765/temp-conversion/fh/to/dg/value/92.23
+
+Use same eureka, api gateway to implement it.
+
+service1 --> service2 --> eureka server register <-- api gateway (filter,logger) --> Call enpoints from gateway
+
+----------------------------------------------------------
+55. Docker implementations for microservies/api's
+----------------------------------------------------------
+56. Kafka with Spring Boot Case (Producer and Consumer) - Optional
+
+Presentations and Mocks
+----------------------------------------------------------
+
+Freshers Training:
+
+Git, Github
+Core Java (Topics - Oops features, Loops, Arrays, Multi Threading,Comparator vs Comparable, RegEx,  
+Enum, Generics, Serialization and De-serialization,Collections, Exception handling, IO Buffer, Cloning)
+Java 8 features
+SQL with procedures etc
+JDBC CRUD & Session with JSP/Servlets
+Spring Boot REST api's
+Spring Data Jpa CRUD with Thymeleaf
+Spring Security
+JUnit
+Microservices
+Docker
+-------------------- Optional 
+Kafka with Spring Boot basics
+Web flux and Reactive programming (In free time if required)
+----------------------------------------------------------
+
+Training Path:
+Web + Java --> Assignments --> Weekly Tests --> POC's --> Demos(Tasks) --> Presentations(Topics) 
+--> Project work(Framework based) --> Mock Interviews --> Grading --> Release
+
+-------------------------------------------------------
+
+
+
+
+
+
+
+
+

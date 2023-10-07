@@ -1,0 +1,23 @@
+Task3/POC3: 5-6 Days
+
+Learn and Create small application of UI using Angular for all transactions
+Use Task1/POC1 as backend and continue with UI for the same.
+
+Tools to be used: Angular 8/10, Spring Boot, Spring JPA, MySQL, Junit
+
+
+Reference:
+https://www.tektutorialshub.com/angular-tutorial/
+https://www.javatpoint.com/everything-you-should-know-about-angular-10
+https://www.jackrutorial.com/2018/09/spring-boot-ajax-jquery-example.html
+https://roytuts.com/spring-boot-jquery-ajax-crud-example/
+https://examples.javacodegeeks.com/how-to-call-a-rest-api-using-jquery-ajax-in-spring-boot/
+https://www.javaguides.net/2020/07/spring-boot-angular-10-crud-example-tutorial.html
+http://www.advancesharp.com/blog/1211/angular-2-search-and-sort-with-ngfor-repeater-with-example
+https://material.angular.io/components/sort/overview
+https://code-maze.com/angular-material-table/
+------------
+https://www.youtube.com/watch?v=wrb0_b4A0Xo
+https://www.youtube.com/watch?v=7wilnsiotqM
+
+After completion your project code has to be shared through GitHub Link only.

@@ -1,0 +1,43 @@
+<section class="card myprofile">
+    <div class="container col-lg-5">
+        <div class="card">
+            <div class="card-header">
+                <h3>My profile</h3>
+            </div>
+            
+            <div class="card-body">
+                <div><img src="https://previews.123rf.com/images/ylivdesign/ylivdesign1402/ylivdesign140200015/25651639-blue-user-profile-sign-on-a-white-background-vector-illustration.jpg" width="200px" height="200px"></div>
+                <div class="mydetails">
+                    <table cellpadding="5px">
+                        <tr>
+                            <th><h5><b>FirstName:</b></h5></th>
+                            <td>{{user.firstName}}</td>
+                        </tr>
+                        <tr>
+                            <th><h5><b>Last Name:</b></h5></th>
+                            <td>{{user.lastName}}</td>
+                        </tr>
+                        <tr>
+                            <th><h5><b>Experience:</b></h5></th>
+                            <td>{{user.experience.experienceLevel}}</td>
+                        </tr>
+                        <tr>
+                            <th><h5><b>Email:</b></h5></th>
+                            <td>{{user.email}}</td>
+                        </tr>
+                        <tr>
+                            <th><h5><b>Password:</b></h5></th>
+                            <td>{{user.password}}</td>
+                        </tr>
+                        <tr>
+                            <th><h5><b>Contact No:</b></h5></th>
+                            <td>{{user.contactNo}}</td>
+                        </tr>
+                    </table>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>

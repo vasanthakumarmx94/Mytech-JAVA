@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Car Rental System</title>
+<link rel="stylesheet" href="bootstrap.min.css" />
+<link rel="stylesheet" href="main.css" />
+<!-- <style type="text/css">
+.adminglas{
+border: 2px solid navy;
+}
+.adminglas:hover {
+	
+} -->
+
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+					aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Car Rental System</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html" class="active">Home</a></li>
+<!-- 					<li><a href="#">AboutUs</a></li> -->
+					<!-- 					<li><a href="#">BookCar</a></li> -->
+					<li><a href="UserRegisterForm.jsp">Register</a></li>
+					<li><a href="index.html">Login</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+	<section class="body1">
+		<div class="container-fluid">
+			<div class="row">
+			<div class="adminglas">
+				<div class="col-md-6">
+					<h3>Admin Login</h3>
+					<form action="adminlogin.jsp" method="post" style="width: 300px">
+						<div class="form-group">
+							<label for="email1">Email address</label> <input type="email"
+								class="form-control" name="email" id="email1"
+								placeholder="Email" />
+						</div>
+						<div class="form-group">
+							<label for="password1">Password</label> <input type="password"
+								class="form-control" name="password" id="password1"
+								placeholder="Password" />
+						</div>
+						<button type="submit" class="btn btn-primary">Login</button>
+					</form>
+				</div>
+				</div>
+
+				<div class="col-md-6">
+					<h3>User Login</h3>
+					<form action="userlogin.jsp" method="post" style="width: 300px">
+						<div class="form-group">
+							<label for="email1">Email address</label> <input type="email"
+								class="form-control" id="email1" name="email"
+								placeholder="Email" />
+						</div>
+						<div class="form-group">
+							<label for="password1">Password</label> <input type="password"
+								class="form-control" id="password1" name="password"
+								placeholder="Password" />
+						</div>
+						<button type="submit" class="btn btn-primary">Login</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+	<div class="blocke">
+		<div class="fblock1">
+		<h3>Car Rental System</h3><br>
+		<ul class="nav navbar-nav">
+					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="#">AboutUs</a></li>
+					<li><a href="customerregisterform">Register</a></li>
+					<li><a href="index.html">Login</a></li>
+					
+				</ul>
+		</div>
+		<div class="fblock1">@copy 2021 Online Car Rental System</div>
+		<div class="fblock1">
+		
+		
+					<form action="userlogin" method="post" style="width: 300px">
+					<h3><b>Contact Us</b></h3>
+						<div class="form-group">
+							<label for="email1">Email address</label> <input type="email"
+								class="form-control" id="email1" name="email"
+								placeholder="Email" />
+						</div>
+						<div class="form-group">
+							<label for="note">Note:</label> <input type="password"
+								class="form-control" id="note" name="note"
+								placeholder="Note text" />
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+		</div>
+	</div>
+	</footer>
+	<script src="jquery.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+</body>
+</html>

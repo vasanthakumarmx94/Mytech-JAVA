@@ -1,0 +1,65 @@
+<div class="navheader">
+    <header class="fixed">
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <h1 class="text-center" class="tittleStyle">Interview Portal</h1>
+
+            <div *ngIf="this.role ==='admin'">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a routerLink='/admin/home' routerLinkActive='active' class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink='/admin/createquestion' routerLinkActive='active' class="nav-link">Add Question</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink='/admin/addcompany' routerLinkActive='active' class="nav-link">Add Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink='/admin/viewcompany' routerLinkActive='active' class="nav-link">View Companies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink='/admin/addexperience' routerLinkActive='active' class="nav-link">Add Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink='/logout' routerLinkActive='active' class="nav-link">Login Out</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div *ngIf="this.role ==='user'">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a routerLink='/user/home' routerLinkActive='active' class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink='/user/viewquestions' routerLinkActive='active' class="nav-link">View Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink='' routerLinkActive='active' class="nav-link">Add Request</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink='/user/profile' routerLinkActive='active' class="nav-link">My profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink='logout' routerLinkActive='active' class="nav-link">Login Out</a>
+                    </li>
+                </ul>
+            </div>
+            <div *ngIf="!authenticate">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a routerLink='home' routerLinkActive='active' class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink='login' routerLinkActive='active' class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink='user/register' routerLinkActive='active' class="nav-link">Sign Up</a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+</div>

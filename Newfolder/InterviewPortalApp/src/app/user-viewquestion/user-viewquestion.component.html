@@ -1,0 +1,39 @@
+<section class="mytableContainer">
+
+    <div class="viewheader">
+        <div class="companies">
+            <button class="btn-info" (click)="viewAllQuestions()">View All Questions</button>
+            <button class="btn-info" *ngFor="let company of companies" 
+            (click)="getAllQuestionsByCompany(company.id)">{{company.companyName}}</button>
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class="companieslist">
+            <div class="heading">
+                <h1><u>{{this.companyName}}</u> Interview Questions</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <div class="card" *ngIf=" this.questions.length == 0">
+                        <h1>No questions</h1>
+                    </div>
+                    <div class="card " *ngFor="let question of questions;let i = index">
+                        <div class="card-header">
+                            <div class="headerquestion">
+                                
+                            </div>
+                            <h5>{{i+1}}. <b>Question: {{question.questionText}}</b></h5>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Answer:</b></h5>
+                            <p class="card-text">{{question.answerText}}</p>
+                            <h5 class="card-title"><b>Description:</b></h5>
+                            <p class="card-text">{{question.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

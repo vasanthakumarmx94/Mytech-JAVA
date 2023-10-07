@@ -1,0 +1,57 @@
+.mytableContainer{
+    border-radius: 10px;
+    border: 2px solid grey;
+    padding-top: 80px;
+    background-color: burlywood;
+   
+}
+.heading{
+    padding-left: 30px;
+}
+.cardslist{
+    display: flex;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.container{
+    padding-top: 120px;
+}
+.card{
+    margin: 20px;
+
+}
+.actions button{
+    width: 100px;
+}
+.headerquestion{
+    display: flex;
+   
+}
+.headerqtn{
+    margin-left: 20px;
+}
+.companies{
+    margin-left: 100px;
+}
+.companies button{
+    margin: 10px;
+}
+.experience{
+    margin-left: 100px;
+    padding: 10px;
+}
+.experience button{
+    margin: 10px;
+
+}
+.viewheader{
+    background-color: rgb(122, 119, 115);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding: 10px;
+}
+
+

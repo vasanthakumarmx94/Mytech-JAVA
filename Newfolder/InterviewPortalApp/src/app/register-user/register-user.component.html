@@ -1,0 +1,55 @@
+<section class="userregister">
+<div class="container col-lg-6">
+    <h1 class="text-center">Register User</h1>
+    <div class="card">
+        <div class="card-body">
+            <form class="form-group" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="firstName">First Name :</label>
+                    <input type="text" class="form-control" id="firstName" [(ngModel)]="user.firstName"
+                        placeholder="Enter FirstName " name="firstName">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name :</label>
+                    <input type="text" class="form-control" id="lastName" [(ngModel)]="user.lastName"
+                        placeholder="Enter lastName " name="lastName">
+                </div>
+
+                <div class="form-group">
+                    <label for="experienceLevel">Experience Level:</label>
+                    <select [(ngModel)]='experienceLevel' name="experienceLevel"  id="experienceLevel" class='form-control'>
+                        <option value="null" selected disabled>Select User</option>
+                        <option value="1">0-1 Year</option>
+                        <option value="2">1-3 Year</option>
+                        <option value="3">3-5 Year</option>
+                        <option value="4">5-8 Year</option>
+                        <option value="5">8-10 Year</option>
+                        <option value="6">Above 10 Year</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" [(ngModel)]="user.email"
+                        placeholder="Enter email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" [(ngModel)]="user.password" id="password"
+                        placeholder="Enter password" name="password">
+                </div>
+                <div class="form-group">
+                    <label for="contactNo">Contact No :</label>
+                    <input type="tel" class="form-control" id="contactNo" [(ngModel)]="user.contactNo"
+                        placeholder="Enter contactNo " name="contactNo">
+                </div>
+
+                <button class="btn btn-success">Register</button>
+                Already have an account?  <a routerLink='/login' routerLinkActive='active' class="nav-link">Log In here</a>
+            </form>
+           
+        </div>
+    </div>
+</div>
+
+</section>

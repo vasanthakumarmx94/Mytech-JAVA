@@ -1,0 +1,65 @@
+<section class="mytableContainer">
+
+    <div class="viewheader">
+        <div class="companies">
+            <button class="btn-info" (click)="viewAllQuestions()">View All Questions</button>
+            <button class="btn-info" *ngFor="let company of companies" (click)="getAllQuestionsByCompany(company.id)"
+                [class.active]="isActive('company')" (click)="setActive('company')">{{company.companyName}}</button>
+        </div>
+
+        <div>
+            <div class="experience">
+                <h5>Experience Level:<select [(ngModel)]='experience' name="experienceLevel"
+                        (click)="getAllQuestionsByExperience(experience.id)" id="experienceLevel">
+                        <option [ngValue]="null" selected disabled>Select Experience</option>
+                        <option *ngFor="let experience of experiences" [ngValue]="experience">
+                            {{experience.experienceLevel}}
+                        </option>
+                    </select>
+                </h5>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="companieslist">
+            <div class="heading">
+                <h1>VIEW QUESTIONS</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <div class="card" *ngIf=" this.questions.length == 0">
+                        <h1>No questions</h1>
+                    </div>
+                    <div class="card " *ngFor="let question of questions">
+                        <div class="card-header">
+                            <div class="headerquestion">
+                                <div>
+                                    <h5> <b>Qus.Id: </b>{{ question.id}}</h5>
+                                    <h5> <b>Question Type: </b>{{ question.questionType}}</h5>
+                                </div>
+                                <div class="headerqtn">
+                                    <h5> <b>Company Name:</b>{{ question.company.companyName}}</h5>
+                                    <h5> <b>Experience Level:</b>{{ question.experience.experienceLevel}}</h5>
+                                </div>
+                            </div>
+                            <h5> <b>Question :{{question.questionText}}</b></h5>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Answer:</b></h5>
+                            <p class="card-text">{{question.answerText}}</p>
+                            <h5 class="card-title"><b>Description:</b></h5>
+                            <p class="card-text">{{question.description}}</p>
+
+                            <div class="actions">
+                                <button (click)="updateQuestion(question.id)" class="btn btn-info">Update</button>&nbsp;
+                                <button (click)="deleteQuestion(question.id)"
+                                    class="btn btn-danger">Delete</button>&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

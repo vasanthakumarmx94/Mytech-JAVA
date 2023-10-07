@@ -1,0 +1,48 @@
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>Example TLD</short-name>
+
+	<tag>
+		<name>CurrentDateTime</name>
+		<tag-class>com.neosoft.DateTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<name>CurrentTime</name>
+		<tag-class>com.neosoft.TimeBodyTag</tag-class>
+		<body-content>scriptless</body-content>
+	</tag>
+
+	<tag>
+		<name>RepeatText</name>
+		<tag-class>com.neosoft.RepeatBodyAttribute</tag-class>
+		<body-content>scriptless</body-content>
+		
+		<attribute>
+		<name>frequency</name>
+		<required>true</required>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>greeting</name>
+		<tag-class>com.neosoft.greatingDemo</tag-class>
+		<body-content>scriptless</body-content>
+	</tag>
+	
+	<tag>
+		<name>searchtext</name>
+		<tag-class>com.neosoft.SearchTag</tag-class>
+		<body-content>scriptless</body-content>
+		
+		<attribute>
+		<name>text</name>
+		<name>Case</name>
+		<required>true</required>
+		</attribute>
+		
+		
+	</tag>
+
+</taglib>

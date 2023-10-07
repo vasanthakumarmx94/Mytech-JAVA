@@ -1,0 +1,37 @@
+<section class="addexperience">
+    <div class="container col-md-8" >
+        <div class="col-md-6 offset-md-3">
+            <h3>Add Experience</h3>
+            <form (ngSubmit)="onSubmit()">
+
+                <div class="form-group" *ngIf="this.id != null">
+                    <label>Experience Id</label>
+                    <input type="number" class="form-control" id="id" [(ngModel)]='experience.id'
+                        name="id" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="experienceLevel">Experience level</label>
+                    <input type="text" class="form-control" id="experienceLevel" [(ngModel)]='experience.experienceLevel'
+                        name="experienceLevel" placeholder="Enter Experience Level Ex: 1-2years">
+                </div>
+                <div class="form-group">
+                    <label for="active">Active Status</label>
+                    <select [(ngModel)]='experience.active' name="active"  id="active" class='form-control'>
+                        <option value="null" selected disabled>Select Active Status</option>
+                        <option value="1">Active</option>
+                        <option value="0">Not Active</option>
+                    </select>
+                </div>
+
+                <br><br>
+                <div class="form-group">
+                    <button class="btn btn-info" type="submit">Submit</button>&nbsp;&nbsp;
+                    <button class="btn btn-info" type="reset">Reset</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</section>

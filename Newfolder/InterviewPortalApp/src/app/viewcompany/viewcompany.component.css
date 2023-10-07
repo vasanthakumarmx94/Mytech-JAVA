@@ -1,0 +1,25 @@
+.viewCompany{
+    padding-top: 100px;
+}
+.mytableContainer{
+    margin-left: 10px;
+    
+}
+.tablehead tr{
+    background-color: gray;
+    
+}
+.cardslist{
+    display: flex;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.card{
+    margin: 20px;
+
+}
+.table{
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+.addquestion{
+    padding-top: 100px;
+}
+#questionText{
+    height: 100px;
+}
+#answerText{
+    height: 200px;
+}
+#description{
+    height: 100px;
+}
+#note{
+    height: 50px;
+}
+
+.addquestion h1{
+    color: brown;
+}
+
+
+.container{
+   
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid cadetblue;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.form-group{
+    margin-top: 20px;
+}
+.addquestion label{
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(12, 11, 12);
+
+}
